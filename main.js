@@ -14,11 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
     scene.add(light);
 
     // const test = await loadGLTF('./assets/models/cannon.glb');
-    // test.scene.scale.set(0.1, 0.1, 0.1);
+    // test.scene.scale.set(0.8, 0.8, 0.8);
     // test.scene.position.set(0, 0, 0);
     const test = await loadGLTF('./assets/models/scanned_cannon.glb');
-    test.scene.scale.set(0.01, 0.01, 0.01);
+    test.scene.scale.set(0.8, 0.8, 0.8);
     test.scene.position.set(0, 0, 0);
+    test.scene.rotation.set(2, 0, 0);
     // house.scene.rotation.set(0, -0.2, 0);
 
     const testAncor = mindarThree.addAnchor(0);
